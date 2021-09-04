@@ -154,7 +154,6 @@ header nav {
   align-items: center;
   min-height: 97px;
 }
-
 header nav .toggle-menu {
   color: white;
   font-size: 22px;
@@ -162,7 +161,8 @@ header nav .toggle-menu {
 }
 
 @media (min-width: 768px) {
-  header nav .toggle-menu {
+  header nav .toggle-menu,
+  header nav #check {
     display: none;
   }
 }
@@ -197,8 +197,13 @@ header nav ul a:hover {
     display: none;
     background-color: var(--overlay-color);
   }
-
-  header nav .toggle-menu:hover + ul {
+  header nav #check {
+    position: relative;
+    z-index: -3;
+    left: 15px;
+    visibility: hidden;
+  }
+  header nav #check:checked ~ ul {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -206,7 +211,6 @@ header nav ul a:hover {
     top: 100%;
     width: 100%;
   }
-
   header nav ul a {
     padding: 15px;
   }
