@@ -198,9 +198,6 @@ header nav ul a:hover {
     background-color: var(--overlay-color);
   }
   header nav #check {
-    position: relative;
-    z-index: -3;
-    left: 15px;
     visibility: hidden;
   }
   header nav #check:checked ~ ul {
@@ -543,6 +540,7 @@ header nav .form i {
   padding: 15px 25px;
   margin: 60px auto 0;
   max-width: fit-content;
+  max-width: -moz-fit-content;
   background-color: var(--main-color);
   color: white;
   text-transform: uppercase;
@@ -668,8 +666,9 @@ header nav .form i {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
   margin: 0 auto 30px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -945,6 +944,7 @@ header nav .form i {
   text-decoration: none;
   border: 1px solid var(--main-color);
   width: fit-content;
+  width: -moz-fit-content;
 }
 .pricing .contact-text {
   margin: 50px auto 20px;
@@ -955,6 +955,7 @@ header nav .form i {
   text-decoration: none;
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   color: white;
   background-color: var(--main-color);
   padding: 15px 30px;
@@ -1161,6 +1162,7 @@ header nav .form i {
   border-bottom: 1px solid white;
   font-size: 22px;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 20px auto;
 }
 .footer .social-icons i {
